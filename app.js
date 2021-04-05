@@ -46,3 +46,12 @@ $(".imagen2 img").attr("src", "https://codeorigin.jquery.com/jquery-wp-content/t
 
 $(".imagen2 img").attr("width","50");
 
+$( ".caja_texto input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    $( "p" ).text( value );
+  })
+.keyup();
+
+$( ".texto p" ).text( "<b>Some</b> new text." );
+
